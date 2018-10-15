@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div id="newDesireListDiv">
+        <h1>Desire List</h1>
+        <input type="text" placeholder="New List" id="desireListName" />
+        <button onclick="createNewList()">Create</button>
+    </div>
+    <div id="desireListDiv" style="display:none;">
+        <h1 id="desireListTitle">New List</h1>
+        <input id="newItemName" type="text" placeholder="New Desire"/>
+        <button onclick="addListItem()">Add</button>
+        <ul id="desireListItems">
+            <li>Golf<button>C</button><button>D</button></li>
+            <li>Kendo<button>C</button><button>D</button></li>
+            <li>Archery<button>C</button><button>D</button></li>
+        </ul>
+    </div>
+</body>
+</html>

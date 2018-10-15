@@ -1,0 +1,29 @@
+﻿body {
+    background-color:lightgray;
+    font-family:Arial;
+    text-align:center;
+}
+
+ul{
+    list-style-type:none;
+    max-width:300px;
+    margin:20px auto;
+}
+
+li{
+    min-height:20px;
+    text-align:left;
+    padding: 5px;
+    margin-bottom:5px;
+    background-color:white;
+    color:black;
+}
+
+    li button{
+        float:right;
+        margin:0px 3px;
+    }
+
+.checked{
+    text-decoration: line-through;
+}
