@@ -5,13 +5,13 @@ using System.Web;
 
 namespace DesireListApplicationv1.Models
 {
-    public class List
+    public class ItemList
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public List<Item> Items { get; set; }
 
-        public List()
+        public ItemList()
         {
             Id = 0;
             Name = string.Empty;
