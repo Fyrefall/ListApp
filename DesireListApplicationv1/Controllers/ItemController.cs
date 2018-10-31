@@ -55,8 +55,21 @@ namespace DesireListApplicationv1.Controllers
 
         // DELETE: api/Item/5
         // Delete an existing item
-        public void Delete(int id)
+        // This won't work with the dummy data as each item won't have it's own id. Need to use EF
+        public IHttpActionResult Delete(int id)
         {
+            ItemList itemList = ItemListController.itemLists[0];
+
+            Item item = itemList.Items.FirstOrDefault(i => i.Id == id);
+
+            if (item == null)
+            {
+                return NotFound();
+            }
+
+            itemList.Items.Remove(item);
+
+            return Ok(itemList);
         }
     }
 }
