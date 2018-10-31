@@ -19,3 +19,6 @@ Created the project and implemented the necessary html and css files
 Integrated jQuery into the web app
 DOM manipulation on click
 Improved Usability
+
+Setup the webservices using ASP.NETs Web API 2 and used that service to make http requests for Get, Post, Put, Delete (CRUD)
+The client can call the webserivce using jquery and ajax
